@@ -19,7 +19,7 @@ const Home = () => {
     provider.setCustomParameters({ prompt: "select_account" });//select account firebase
 
     try {
-        await signOut(auth);  //first logOut 
+        await signOut(auth);  
         console.log("User logged out before signIn attempt.");
 
         const result = await signInWithPopup(auth, provider); //again sign In with google 
